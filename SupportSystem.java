@@ -38,8 +38,9 @@ public class SupportSystem
 
         while(!finished) {
             String input = reader.getInput();
-
-            if(input.startsWith("bye")) {
+             input = input.trim();
+             input = input.toLowerCase();
+            if(input.equals("bye")) {
                 finished = true;
             }
             else {
@@ -71,3 +72,20 @@ public class SupportSystem
         System.out.println("Nice talking to you. Bye...");
     }
 }
+/**
+    #2. 
+    
+    #3.
+    
+    #4. endsWith(String suffix)
+    
+    #5.length()
+    
+    #6.test
+
+    #7. Sring text = text.trim();
+    
+    #10.Return type is boolean
+    
+    #13. java.util, it generate random numbers, Random(),
+   */
