@@ -7,34 +7,45 @@
  */
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.HashMap;
 public class Responder
 {
     private Random randomGenerator;
-    public ArrayList<String> responses;
+   // public ArrayList<String> responses;
+    public HashMap<String, String> responses;
     /**
      * Construct a Responder - nothing to do
      */
     
     public Responder()
     {
-         randomGenerator = new Random();
-        responses= new ArrayList<>();
+        randomGenerator = new Random();
+        //responses= new ArrayList<>();
+        responses = new HashMap<>();
         fillResponses();
     }
 
     private void fillResponses()
     {
-        responses.add("yes");
-        responses.add("no");
-        responses.add("maybe");
-        responses.add("who knows");
-        responses.add("I'll ask my mom");
-        responses.add("no idea");
+        responses.put("mango","yes");
+        responses.put("orange","orange");
+        responses.put("apple","caleb");
+        responses.put("pass","who knows");
+        responses.put("sleep","I'll ask my mom");
+        responses.put("java","no idea");
+    }
+    private String pickDefaultResponse()
+    {
+        return "Idk leave me alone";
     }
     
-     public String generateResponse()
+     public String generateResponse(String word)
     {
-        int index = randomGenerator.nextInt(responses.size());
-        return responses.get(index);
+        //int index = randomGenerator.nextInt(responses.size());
+        String answer = responses.get(word);
+        if (answer == null){
+            answer = pickDefaultResponse();
+        }
+        return answer;
     }
 }
