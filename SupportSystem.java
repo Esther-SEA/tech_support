@@ -90,3 +90,9 @@ public class SupportSystem
     
     #13. java.util, it generate random numbers, Random(),
    */
+  
+/** PART 2 
+    
+ * #26. size()
+ * 
+*/
