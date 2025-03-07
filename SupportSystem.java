@@ -15,7 +15,6 @@ public class SupportSystem
 {
     private InputReader reader;
     private Responder responder;
-    
     /**
      * Creates a technical support system.
      */
@@ -24,7 +23,8 @@ public class SupportSystem
         reader = new InputReader();
         responder = new Responder();
     }
-
+    
+    
     /**
      * Start the technical support system. This will print a welcome
      * message and enter into a dialog with the user, until the user
@@ -71,6 +71,7 @@ public class SupportSystem
     {
         System.out.println("Nice talking to you. Bye...");
     }
+
 }
 /**
     #2. 
