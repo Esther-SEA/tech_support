@@ -93,6 +93,17 @@ public class SupportSystem
   
 /** PART 2 
     
+ * #24. Hashmap is a way to store data using pairs, keys and values
  * #26. size()
- * 
+ * #28. the new value replaces the old one.
+ * #29. both values are stored separately, since they have different keys.
+ * #30. while using containskey()
+ * #31. it return null
+ * #32. you use keySet()
+ * #34. both store things, but Arraylist lets you have duplicates while hashset doesnt.
+ * #35. you can define it to splut by a specific character like split(",")
+ * #36. to split a string with a tab you use split([ \\t]) , and for a colon it's simply split(":")
+ * #37. HashSet doesn't have any order for the elements while Arraylist does.
+ * #38. it outputs empty strings.
+ * #39. class variables: everyone in the classs can use them, you can also use them without making an object. Class methods: you also dont need to make an object to use them,they are associated with the class rather than an instance of the class
 */
